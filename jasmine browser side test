@@ -1,0 +1,24 @@
+Browser -side Testing for jasmine
+===================================
+
+ - Default Html reporter for the application
+    - SpecRunner.html
+    - load all jasmine dependancy
+    - load all source code file
+    - load all spec file
+ - Front-End test
+  - jquery DOM selector
+   - jquery.js --> Provide Debugger for DOM
+  - jasmine-jquery.js
+   - Contract between jasmine and jquery for DOM testing
+
+
+
+###################
+create a javascript test based on jasmine for following
+
+1. verify the availablity of the specific record in array if it is present then it should return true otherwise return false
+2. write a test which will throw an error for the record not found in array
+3. Write a test which will compare two array for dep equality.
+
+Note: Array for all these test must be json array containing data either from employee or products
