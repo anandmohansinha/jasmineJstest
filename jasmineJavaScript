@@ -1,0 +1,83 @@
+https://github.com/maheshsabnis/jstest.git
+
+
+
+# Unit Testing
+
+1. jasmine  --> Object Model 
+2. jest  --> Object Model
+3. mocha  --> Object Model
+4. karma  -->An engine for executing one or more test
+
+
+
+
+
+- Jasmin 
+ - CommandLine using CLI
+    - Configure Jasmin
+     -npm init -y
+       - it generate package.json with default   
+    - npm install -g  jasmine
+      - Install Jasmine in global scope
+      - This provide "Jasmine" CLI to run test
+    - Install Jasmine in local scope for API access
+       - npm install --save-dev jasmine 
+    - The Jasmine intellisense
+      - npm install --save-dev @types/node
+      - npm install --save-dev @types/jasmine 
+    - The Command "jasmine example"
+      - Install Jasmine Smaple Test Cases for reference
+ - Project Configuration in general for RAW-JavaScript
+    - The 'src' folder(or src/app path)
+    - contains all source code files
+    - File name for test
+     - XXXX.spec.js / xxxx.spec.ts
+
+ - Spec folder
+    - Contains all test-cases
+
+ - The "jasmine examples" commands generates standards refernce examples for Unit test
+ - "jasmine init" provide based testing configuration  
+ - Browser based Testing
+
+
+
+ =====================================================================================
+
+ Test Cases
+
+  - The code based workflow to perform Unit test for source code
+   - 2 parts
+    - Test case description
+     - The "describe()" object
+       - An entry point to test case
+     - Configuration or dependency creation to be injected for each test case
+      - the "beforeEach()" object
+      - Defining instances for all objects that each test  case wants to use
+    - Actual Test case
+     - The "it()" object
+     - The test-code
+      - Arrange
+       - arrangment of test specific dependancy e.g. parameters needed to be passed to the method being tested 
+       - The "expected result"
+      - Act 
+       - acting upon the test
+        - e.g. invoking the code/method to be tested from the source code
+        - this will generate "actual result"
+      - Assert
+       - Test- Case result
+       - compare actual with expected
+       - The "expect()" object
+         - Equal
+         - NotEqual
+         - True
+         - False
+         - GreaterThan
+         - LessThan
+         - Be
+         - Throw
+         - ThrowError
+         - Contains
+         - isTypeOf 
+
